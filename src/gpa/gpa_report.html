@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GPA Report</title>
+  <style type="text/css">
+    @font-face {
+      font-family: Roboto;
+      src: url("/fonts/Roboto-Regular.ttf");
+    }
+
+    body {
+      text-align: center;
+      font-size: 14px;
+      background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    .report {
+      display: inline-block;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 6px;
+      padding: 20px;
+      margin: 30px auto;
+    }
+
+    .personal,
+    .summary {
+      margin-left: 50px;
+      width: 600px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .courses {
+      margin-left: 50px;
+      width: 600px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 1em;
+      /*text-indent:-1em;*/
+    }
+
+    h1 {
+      color: #0a0a09;
+      text-align: center;
+    }
+
+    label {
+      padding: 3px 7px;
+      display: inline-block;
+      width: 120px;
+      margin-bottom: 5px;
+    }
+
+    .courses,
+    .summary,
+    .courses th,
+    .summary th,
+    .courses td,
+    .summary td {
+      border: 2px solid #04107d;
+      border-collapse: collapse;
+      padding: 3px 10px;
+    }
+
+    .credits {
+      text-align: center;
+    }
+
+    .total {
+      font-weight: bold;
+      color: #070707;
+    }
+
+    .exclude {
+      color: #333333;
+    }
+
+    button {
+      color: #ffffff;
+      background-color: #4529a4;
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      border-radius: 3px;
+      margin-top: 30px;
+      margin-left: 50px;
+      transition: 0.25s all;
+      transition: 0.3s ease-in-out;
+      border: 1.5px solid #5a3ee5;
+      position: absolute;
+      top: 50px;
+      right: 100px;
+    }
+
+    button:hover {
+      color: white;
+      border-color: #0f0f0f;
+      transform: scale(1.05);
+      background-color: #8361f0;
+    }
+
+    .thank-you-message {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4529a4;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+
+    .thank-you-message {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4529a4;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+
+      .report,
+      .personal,
+      .summary,
+      .courses {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .heading {
+      text-align: center;
+      height: 60px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  
+    .heading img {
+      height: 60px;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thank-you-message">Thank you for visiting!</div>
+  <div class="report">
+    <div class="heading">
+      <img src="/static/HorizontalBlack.png" alt="IIITR logo">
+    </div>
+    <h1>Details</h1>
+    <table class="personal">
+      <tr>
+        <td><label>Name</label></td>
+        <td><span class="value name"></span></td>
+      </tr>
+      <tr>
+        <td><label>Roll Number</label></td>
+        <td><span class="value rollno"></span></td>
+      </tr>
+      <tr>
+        <td><label>Branch</label></td>
+        <td><span class="value branch"></span></td>
+      </tr>
+      <tr>
+        <td><label>Student Type</label></td>
+        <td><span class="value student-type"></span></td>
+      </tr>
+      <tr>
+        <td><label>CGPA</label></td>
+        <td><span class="value cgpa"></span></td>
+      </tr>
+    </table>
+    <h1>Summary</h1>
+    <table class="summary">
+      <tr>
+        <th>Category</th>
+        <th class="credits">Credits</th>
+      </tr>
+    </table>
+    <h1>Selected Courses</h1>
+    <table class="courses">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+          <th>Credits</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <button class="download-pdf btn btn-dark">Download PDF</button>
+  <script src="/js/html2pdf.bundle.min.js"></script>
+  <script src="gpa_report.js"></script>
+</body>
+
+</html>
