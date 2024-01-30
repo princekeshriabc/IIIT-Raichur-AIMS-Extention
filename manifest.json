@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "IIITR AIMS",
     "version": "1.0",
+    "description": "Calculate CGPA directly from AIMS Portal. Click on the IIITR logo when on AIMS portal's courses page to see your CGPA.",
     "background": {
       "scripts": ["background.js"],
       "persistent":false
