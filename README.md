@@ -18,15 +18,14 @@ I have created a extension which enables us to calculate our cgpa directly from 
 
 ## Demo
 
-Insert gif or link to demo
-[Here insert video, only of working demo]
+![Demovideo](https://github.com/princekeshriabc/IIIT-Raichur-AIMS-Extention/blob/main/static/Demo.mp4)
 
 
 ## Installation
 
 If you want to install and run this code in your own local machines then you can follow these steps:
 
-- Clone the repository using git bash
+- Clone the repository using git bash or simply download the "zip" file.
 ```bash
 git clone https://github.com/princekeshriabc/IIIT-Raichur-AIMS-Extention.git
 ```
