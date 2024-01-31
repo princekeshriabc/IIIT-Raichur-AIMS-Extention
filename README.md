@@ -3,7 +3,7 @@
 I have created a extension which unables us to calculate our cgpa directly from the aims protal, just by clicking on the extension. One can seamlessly download the extension from Google chorme and use it. It is very user friendly and enables smooth experience for cgpa calculation.
 
 
-![Logo](https://github.com/princekeshriabc/IIIT-Raichur-AIMS-Extention/blob/main/static/HorizontalWhite.png)
+![Logo](https://github.com/princekeshriabc/IIIT-Raichur-AIMS-Extention/blob/main/static/HorizontalBlue.png)
 
 
 
