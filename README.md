@@ -25,7 +25,7 @@ I have created a extension which enables us to calculate our cgpa directly from 
 
 If you want to install and run this code in your own local machines then you can follow these steps:
 
-- Follow this video Below procedure [Video](https://drive.google.com/file/d/1mBOcdjsGD2gNxJLIAs2b7JnV5SDmuY6s/view?usp=sharing)
+- Follow this video Below procedure [Video](https://drive.google.com/file/d/1AODwvCxIYFSJZfOyKzNmU7EBPQJdTfx6/view?usp=sharing)
 - Clone the repository using git bash or simply download the "zip" file.
 ```bash
 git clone https://github.com/princekeshriabc/IIIT-Raichur-AIMS-Extention.git
