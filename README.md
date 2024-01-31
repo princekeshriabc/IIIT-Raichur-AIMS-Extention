@@ -18,7 +18,7 @@ I have created a extension which enables us to calculate our cgpa directly from 
 
 ## Demo
 
-![Demovideo](https://github.com/princekeshriabc/IIIT-Raichur-AIMS-Extention/blob/main/static/Demo.mp4)
+[Demovideo](https://drive.google.com/file/d/1mBOcdjsGD2gNxJLIAs2b7JnV5SDmuY6s/view?usp=sharing)
 
 
 ## Installation
